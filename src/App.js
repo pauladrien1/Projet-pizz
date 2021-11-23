@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import {Route , Switch , Redirect} from 'react-router-dom'
+import FindUs from './pages/FindUs';
+import Home from './pages/Home';
+import Pizzas from './pages/Pizzas';
+import Pastas from './pages/Pastas';
+import Desserts from './pages/Desserts';
+import Drinks from './pages/Drinks';
+import LegalMention from './pages/LegalMention';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Switch>
+      <Route exact path = "/" component={Home} />
+      <Route exact path = "/Pizzas" component={Pizzas} />
+      <Route exact path = "/Pastas" component={Pastas} />
+      <Route exact path = "/Desserts" component={Desserts} />
+      <Route exact path = "/Drinks" component={Drinks} />
+      <Route exact path = "/FindUs" component={FindUs} />
+      <Route exact path = "/LegalMention" component={LegalMention} />
+      <Redirect to="/" />
+    </Switch>
   );
-}
+};
 
 export default App;
