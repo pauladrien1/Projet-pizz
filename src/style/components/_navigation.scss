@@ -44,7 +44,7 @@
   .nav-portfolio {
     cursor: pointer;
     display: flex;
-    // padding-right: 6rem;
+    padding-right: 6rem;
     transition: .5s;
 
     &:hover .nav-projects,
@@ -62,7 +62,7 @@
       position: absolute;
       visibility: hidden;
       opacity: 0;
-      padding: 0 40px;
+      padding: 0 80px;
       width: 300px;
       transform: translateX(70px);
       transition: .3s ;

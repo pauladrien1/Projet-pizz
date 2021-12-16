@@ -1,6 +1,6 @@
 import React from 'react';
 import {Route , Switch , Redirect} from 'react-router-dom'
-import FindUs from './pages/FindUs';
+import Contact from './pages/Contact';
 import Home from './pages/Home';
 import Pizzas from './pages/Pizzas';
 import Pastas from './pages/Pastas';
@@ -16,7 +16,7 @@ const App = () => {
       <Route exact path = "/Pastas" component={Pastas} />
       <Route exact path = "/Desserts" component={Desserts} />
       <Route exact path = "/Drinks" component={Drinks} />
-      <Route exact path = "/FindUs" component={FindUs} />
+      <Route exact path = "/FindUs" component={Contact} />
       <Route exact path = "/LegalMention" component={LegalMention} />
       <Redirect to="/" />
     </Switch>
